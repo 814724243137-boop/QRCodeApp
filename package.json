@@ -2,13 +2,17 @@
   "name": "qrcodeapp",
   "version": "1.0.0",
   "main": "index.ts",
+  "homepage": "https://yourusername.github.io/qrcodeapp",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "predeploy": "npx expo export:web",
+    "deploy": "gh-pages -d web-build"
   },
   "dependencies": {
+    "@expo/webpack-config": "^19.0.1",
     "@react-navigation/native": "^7.1.17",
     "@react-navigation/stack": "^7.4.8",
     "expo": "~54.0.7",
@@ -17,14 +21,20 @@
     "expo-clipboard": "^8.0.7",
     "expo-status-bar": "~3.0.8",
     "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-native": "0.81.4",
     "react-native-qrcode-svg": "^6.3.15",
     "react-native-safe-area-context": "^5.6.1",
     "react-native-screens": "^4.16.0",
-    "react-native-svg": "^15.13.0"
+    "react-native-svg": "^15.13.0",
+    "react-native-web": "^0.21.0"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.27.1",
+    "@babel/preset-flow": "^7.27.1",
     "@types/react": "~19.1.0",
+    "babel-preset-expo": "^54.0.1",
+    "gh-pages": "^6.3.0",
     "typescript": "~5.9.2"
   },
   "private": true

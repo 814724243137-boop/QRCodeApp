@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "QR Code Master",
-    "slug": "qr-code-master",
+    "name": "QRCodeApp",
+    "slug": "QRCodeApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#3498db"
+      "backgroundColor": "#ffffff"
     },
     "ios": {
       "supportsTablet": true
